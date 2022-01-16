@@ -6,7 +6,7 @@ NC='\e[0m'
 MYIP=$(wget -qO- icanhazip.com);
 echo -e  "${RED}Checking VPS${NC}"
 sleep 2
-IZIN=$( curl https://raw.githubusercontent.com/dpvpn09/ipvps/main/ipvps | grep $MYIP )
+IZIN=$( curl https://raw.githubusercontent.com/kevindoni/dpvpn2/main/kepo/ipvps | grep $MYIP )
 if [ $MYIP = $IZIN ]; then
 echo -e "${GREEN}Permission Accepted...${NC}"
 sleep 2 
